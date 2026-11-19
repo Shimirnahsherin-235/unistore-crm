@@ -1,0 +1,4 @@
+bill_ref,phone,store_name,order_date,product_name,quantity
+B1,9000000001,Reliance Fresh,2026-11-10,Sugar 1kg,2
+B1,9000000001,Reliance Fresh,2026-11-10,Biscuit,5
+B2,9000000002,Metro Mart,2026-11-12,Tea Powder 250g,1
