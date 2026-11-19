@@ -416,3 +416,16 @@ def delete_order(order_id):
         raise
     finally:
         conn.close()
+        
+def clear_all_data():
+    conn = sqlite3.connect("crm.db")
+    try:
+        for t in ["order_items", "orders", "customers", "products", "stores"]:
+            conn.execute(f"DELETE FROM {t}")
+        conn.execute("DELETE FROM sqlite_sequence")
+        conn.commit()
+    except Exception:
+        conn.rollback()
+        raise
+    finally:
+        conn.close()

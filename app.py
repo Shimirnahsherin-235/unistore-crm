@@ -7,6 +7,7 @@ from db import (init_db, add_store, get_stores, add_customer, search_customers,
                 import_customers)
 from db import import_stores, import_products, import_bills
 from db import delete_store, delete_product, delete_customer, delete_order
+from db import clear_all_data
 
 st.set_page_config(page_title="UniStore CRM", page_icon="🛍️", layout="wide")
 init_db()
@@ -310,3 +311,14 @@ elif page == "Import Data":
                     with st.expander("Why some bills were skipped"):
                         for e in errors[:20]:
                             st.write(e)
+                            
+            st.divider()
+    st.subheader("Start fresh")
+    st.warning("This deletes ALL stores, customers, products and bills. It cannot be undone.")
+    confirm = st.text_input("Type DELETE to confirm", key="clear_confirm")
+    if st.button("Clear all data"):
+        if confirm == "DELETE":
+            clear_all_data()
+            st.success("All data cleared. You can now import your own files.")
+        else:
+            st.error("Type DELETE exactly to confirm.")
