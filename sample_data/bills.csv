@@ -1,4 +1,14 @@
 bill_ref,phone,store_name,order_date,product_name,quantity
-B1,9000000001,Reliance Fresh,2026-11-10,Sugar 1kg,2
-B1,9000000001,Reliance Fresh,2026-11-10,Biscuit,5
-B2,9000000002,Metro Mart,2026-11-12,Tea Powder 250g,1
+B1,9000000003,Reliance Fresh,2026-11-10,Sugar 1kg,2
+B1,9000000003,Reliance Fresh,2026-11-10,Biscuit,5
+B2,9000000004,Metro Mart,2026-11-12,Tea Powder 250g,1
+B3,9000000005,Reliance Fresh,2026-11-13,Sugar 1kg,3
+B4,9000000006,Metro Mart,2026-11-14,Biscuit,10
+B4,9000000006,Metro Mart,2026-11-14,Tea Powder 250g,2
+B5,9000000007,Reliance Fresh,2026-11-15,Tea Powder 250g,1
+B6,9000000008,Metro Mart,2026-11-15,Sugar 1kg,2
+B7,9000000009,Reliance Fresh,2026-11-16,Biscuit,6
+B8,9000000010,Metro Mart,2026-11-17,Sugar 1kg,1
+B8,9000000010,Metro Mart,2026-11-17,Biscuit,4
+B9,9000000011,Reliance Fresh,2026-11-18,Tea Powder 250g,2
+B10,9000000012,Metro Mart,2026-11-18,Sugar 1kg,5
